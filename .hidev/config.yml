@@ -1,0 +1,15 @@
+package:
+    type:           yii2-extension
+    name:           yii2-language
+    title:          Yii2 module for language switching
+    headline:       Yii2 Language Module
+    keywords:       yii2, extenstion, language, switcher, module, widget
+    namespace:      hiqdev\yii2\language
+    description:    |
+        This [Yii2](http://yiiframework.com/) extension provides language switching module.
+
+        This extension provides:
+
+        - module with controller
+        - widget for language selecting
+

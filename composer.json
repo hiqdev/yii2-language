@@ -1,0 +1,72 @@
+{
+    "name": "hiqdev/yii2-language",
+    "type": "yii2-extension",
+    "description": "Yii2 module for language switching",
+    "keywords": [
+        "yii2",
+        "extenstion",
+        "language",
+        "switcher",
+        "module",
+        "widget"
+    ],
+    "homepage": "https://github.com/hiqdev/yii2-language",
+    "license": "BSD-3-Clause",
+    "support": {
+        "email": "support@hiqdev.com",
+        "source": "https://github.com/hiqdev/yii2-language",
+        "issues": "https://github.com/hiqdev/yii2-language/issues",
+        "wiki": "https://github.com/hiqdev/yii2-language/wiki",
+        "forum": "http://forum.hiqdev.com/"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "role": "Project lead",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hipanel.com/"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Lead backend developer",
+            "email": "silverfire@hiqdev.com",
+            "homepage": "http://silverfire.me/"
+        },
+        {
+            "name": "Andrey Klochok",
+            "role": "Lead frontend developer",
+            "email": "tafid@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        },
+        {
+            "name": "Yuriy Myronchuk",
+            "role": "QA Lead",
+            "email": "bladeroot@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+        "hiqdev/hidev-php": "*",
+        "hiqdev/hidev-hiqdev": "*",
+        "yiisoft/yii2": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "hiqdev\\yii2\\language\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "hiqdev\\yii2\\language\\tests\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
