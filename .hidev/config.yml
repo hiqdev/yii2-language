@@ -10,6 +10,6 @@ package:
 
         This extension provides:
 
-        - module with controller
-        - widget for language selecting
+        - module with controller and language select action
+        - widget for displaying language selection menu
 
