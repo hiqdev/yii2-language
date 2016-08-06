@@ -2,7 +2,9 @@
 
 namespace hiqdev\yii2\language;
 
+use Yii;
 use yii\base\BootstrapInterface;
+use yii\web\Cookie;
 
 /**
  * Language Module.
@@ -143,5 +145,12 @@ class Module extends \yii\base\Module implements BootstrapInterface
     {
         Yii::$app->language = $language;
         Yii::$app->getFormatter()->locale = $language;
+    }
+
+    public static $MODULE_ID = 'language';
+
+    public static function getInstance()
+    {
+        return Yii::$app->getModule(static::$MODULE_ID);
     }
 }
