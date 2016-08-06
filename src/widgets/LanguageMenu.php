@@ -1,19 +1,28 @@
 <?php
 
+/*
+ * Yii2 module for language switching
+ *
+ * @link      https://github.com/hiqdev/yii2-language
+ * @package   yii2-language
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hiqdev\yii2\language\widgets;
 
 use hiqdev\yii2\language\Module;
 use Yii;
-use yii\helpers\Json;
-use yii\helpers\Url;
 
 /**
  * Language Menu widget.
+ *
+ * @property Module $module The module to be used, can be found by default.
  */
 class LanguageMenu extends \yii\base\Widget
 {
     /**
-     * @var Module $module
+     * @var Module the module to be used.
      */
     public $_module;
 
@@ -40,4 +49,3 @@ class LanguageMenu extends \yii\base\Widget
         $this->_module = $value;
     }
 }
-
