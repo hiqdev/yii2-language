@@ -15,6 +15,8 @@ This [Yii2](http://yiiframework.com/) extension provides language switching modu
 This extension provides:
 
 - module with controller and language select action
+    - auto detection of acceptable languages
+    - saving selected language to cookie
 - widget for displaying language selection menu
 
 ## Installation
