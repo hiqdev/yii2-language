@@ -14,8 +14,8 @@ This [Yii2](http://yiiframework.com/) extension provides language switching modu
 
 This extension provides:
 
-- module with controller
-- widget for language selecting
+- module with controller and language select action
+- widget for displaying language selection menu
 
 ## Installation
 
@@ -35,9 +35,25 @@ or add
 
 to the require section of your composer.json.
 
+## Usage
+
+Example application configuration:
+ 
+```php
+    'modules' => [
+        'language' => [
+            'class' => \hiqdev\yii2\merchant\Module::class,
+            'languages' => [
+                'en' => 'English',
+                'ru' => 'Русский',
+            ],
+        ],
+    ],
+```
+
 ## License
 
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/bsd-3-clause).
 
-Copyright © 2014-2016, HiQDev (http://hiqdev.com/)
+Copyright © 2016, HiQDev (http://hiqdev.com/)
