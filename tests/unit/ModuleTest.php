@@ -1,18 +1,17 @@
 <?php
 
 /*
- * Cart module for Yii2
+ * Yii2 module for language switching
  *
  * @link      https://github.com/hiqdev/yii2-language
  * @package   yii2-language
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiqdev\yii2\language\tests\unit;
 
 use hiqdev\yii2\language\Module;
-use Yii;
 use yii\web\Application;
 
 /**
@@ -55,5 +54,4 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Module::class, $module);
         $this->assertSame($this->object, $module);
     }
-
 }
