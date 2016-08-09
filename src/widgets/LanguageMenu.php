@@ -11,7 +11,6 @@
 
 namespace hiqdev\yii2\language\widgets;
 
-use hiqdev\yii2\language\Module;
 use Yii;
 
 /**
@@ -21,31 +20,14 @@ use Yii;
  */
 class LanguageMenu extends \yii\base\Widget
 {
-    /**
-     * @var Module the module to be used.
-     */
-    public $_module;
+    use \hiqdev\yii2\language\GetModuleTrait;
 
     public function run()
     {
         return $this->render('LanguageMenu', [
             'language'  => Yii::$app->language,
             'languages' => $this->getModule()->languages,
-            'selectUrl' => '/language/language/select',
+            'selectUrl' => '/' . $this->getModule()->id . '/language/select',
         ]);
-    }
-
-    public function getModule()
-    {
-        if ($this->_module === null) {
-            $this->_module = Module::getInstance();
-        }
-
-        return $this->_module;
-    }
-
-    public function setModule(Module $value)
-    {
-        $this->_module = $value;
     }
 }
