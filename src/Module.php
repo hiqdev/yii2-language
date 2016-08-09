@@ -23,7 +23,7 @@ use yii\web\Cookie;
  * ```php
  * 'modules' => [
  *     'language' => [
- *         'class' => 'hiqdev\yii2\merchant\Module',
+ *         'class' => 'hiqdev\yii2\language\Module',
  *         'languages' => [
  *             'en' => 'English',
  *             'ru' => 'Русский',
