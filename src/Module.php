@@ -23,7 +23,7 @@ use yii\web\Cookie;
  * ```php
  * 'modules' => [
  *     'language' => [
- *         'class' => 'hiqdev\yii2\language\Module',
+ *         'class' => \hiqdev\yii2\language\Module::class,
  *         'languages' => [
  *             'en' => 'English',
  *             'ru' => 'Русский',
@@ -45,7 +45,23 @@ class Module extends \yii\base\Module implements BootstrapInterface
      * ]
      * ```
      */
-    public $languages = [];
+    protected $_languages = [];
+
+    public function setLanguages(array $list)
+    {
+        $this->_languages = $list;
+    }
+
+    public function getLanguages()
+    {
+        if (!$this->_languages) {
+            $this->_languages = [
+                Yii::$app->language => Yii::$app->language,
+            ];
+        }
+
+        return $this->_languages;
+    }
 
     /**
      * @var string Name of the cookie.
