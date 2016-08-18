@@ -63,6 +63,11 @@
             "hiqdev\\yii2\\language\\tests\\": "tests"
         }
     },
+    "extra": {
+        "config-plugin": {
+            "hisite": "src/config/hisite.php"
+        }
+    },
     "repositories": [
         {
             "type": "composer",
