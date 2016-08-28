@@ -6,4 +6,11 @@ return [
             'class' => \hiqdev\yii2\language\Module::class,
         ],
     ],
+    'components' => [
+        'themeManager' => [
+            'widgets' => [
+                'LanguageMenu' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
+            ],
+        ],
+    ],
 ];

@@ -22,11 +22,21 @@ class LanguageMenu extends \yii\base\Widget
 {
     use \hiqdev\yii2\language\GetModuleTrait;
 
+    public function getLanguages()
+    {
+        return $this->getModule()->languages;
+    }
+
+    public function getLanguage()
+    {
+        return Yii::$app->language;
+    }
+
     public function run()
     {
         return $this->render('LanguageMenu', [
-            'language'  => Yii::$app->language,
-            'languages' => $this->getModule()->languages,
+            'language'  => $this->getLanguage(),
+            'languages' => $this->getLanguages(),
             'selectUrl' => '/' . $this->getModule()->id . '/language/select',
         ]);
     }
