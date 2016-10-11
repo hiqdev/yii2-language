@@ -11,6 +11,7 @@
 
 namespace hiqdev\yii2\language\widgets;
 
+use codemix\localeurls\UrlManager;
 use Yii;
 
 /**
@@ -37,7 +38,20 @@ class LanguageMenu extends \yii\base\Widget
         return $this->render('LanguageMenu', [
             'language'  => $this->getLanguage(),
             'languages' => $this->getLanguages(),
-            'selectUrl' => '/' . $this->getModule()->id . '/language/select',
+            'selectUrl' => $this->getSelectUrl(),
         ]);
+    }
+
+    public function getSelectUrl()
+    {
+        if (Yii::$app->urlManager instanceof UrlManager) {
+            $route = Yii::$app->controller->route;
+            $params = Yii::$app->request->get();
+            array_unshift($params, '/' . $route);
+
+            return $params;
+        }
+
+        return ['/' . $this->getModule()->id . '/language/select'];
     }
 }

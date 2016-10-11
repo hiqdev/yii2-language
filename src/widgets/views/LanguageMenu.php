@@ -17,7 +17,7 @@ use yii\helpers\Url;
             <li class="header">
                 <?= Html::a(
                     $lang,
-                    Url::to([$selectUrl, 'language' => $code]),
+                    Url::to(array_merge($selectUrl, ['language' => $code])),
                     ['class' => mb_stristr($language, $code) ? 'text-bold' : '']
                 ) ?>
             </li>
