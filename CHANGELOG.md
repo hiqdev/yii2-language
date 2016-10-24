@@ -1,8 +1,10 @@
 hiqdev/yii2-language
 --------------------
 
-## [Under development]
+## [0.0.1] - 2016-10-11
 
+- Fixed compatibility with `codemix/yii2-localeurls`
+- Added default languages list
 - Added empty tests
 - Added basics
 
