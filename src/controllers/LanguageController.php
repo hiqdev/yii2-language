@@ -18,7 +18,6 @@ class LanguageController extends \yii\web\Controller
         return [
             'select' => [
                 'class' => \hiqdev\yii2\language\actions\SelectAction::class,
-                'module' => $this->module,
             ],
         ];
     }

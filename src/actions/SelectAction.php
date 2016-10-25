@@ -27,7 +27,7 @@ class SelectAction extends \yii\base\Action
         $this->getModule()->setLanguage($language);
 
         $url = Yii::$app->request->referrer;
-        if ($url === null) {
+        if (empty($url) || $url === Yii::$app->request->url) {
             $url = Yii::$app->getHomeUrl();
         }
 

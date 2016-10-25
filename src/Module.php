@@ -49,7 +49,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
     public function setLanguages(array $list)
     {
-        $this->_languages = $list;
+        $this->_languages = array_filter($list);
     }
 
     public function getLanguages()
