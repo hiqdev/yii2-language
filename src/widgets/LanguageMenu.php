@@ -33,9 +33,11 @@ class LanguageMenu extends \yii\base\Widget
         return Yii::$app->language;
     }
 
+    public $view = 'LanguageMenu';
+
     public function run()
     {
-        return $this->render('LanguageMenu', [
+        return $this->render($this->view, [
             'language'  => $this->getLanguage(),
             'languages' => $this->getLanguages(),
             'selectUrl' => $this->getSelectUrl(),
