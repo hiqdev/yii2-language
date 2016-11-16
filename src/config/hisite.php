@@ -8,12 +8,12 @@ return [
     ],
     'components' => [
         'themeManager' => [
-            'widgets' => [
-                'LanguageMenu' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
-            ],
             'pathMap' => [
                 '@hiqdev/yii2/language/widgets/views' => '$themedWidgetPaths',
             ],
         ],
+    ],
+    'definitions' => [
+        'LanguageMenu' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
     ],
 ];
