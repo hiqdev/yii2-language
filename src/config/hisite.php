@@ -13,7 +13,9 @@ return [
             ],
         ],
     ],
-    'definitions' => [
-        'LanguageMenu' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
+    'container' => [
+        'definitions' => [
+            'LanguageMenu' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
+        ],
     ],
 ];
