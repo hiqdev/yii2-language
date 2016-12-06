@@ -1,7 +1,17 @@
 hiqdev/yii2-language
 --------------------
 
-## [0.0.1] - 2016-10-11
+## [0.0.2] - 2016-12-06
+
+- Changed container definitions settings
+    - [f737c61] 2016-12-06 csfixed [sol@hiqdev.com]
+    - [0b2b036] 2016-12-02 used proper container definitions setting [sol@hiqdev.com]
+    - [33e88c4] 2016-11-16 redone themeManager widgets to DI definitions [sol@hiqdev.com]
+- Fixed redirect loop at language selecting
+    - [cb4d51a] 2016-10-27 + view parameter to LanguageMenu [sol@hiqdev.com]
+    - [a268069] 2016-10-25 fixed redirect loop at language selecting [sol@hiqdev.com]
+
+## [0.0.1] - 2016-10-24
 
 - Fixed compatibility with `codemix/yii2-localeurls`
     - [6d1ed10] 2016-10-11 fixed language select url when `codemix/yii2-localeurls` used [sol@hiqdev.com]
@@ -42,3 +52,8 @@ hiqdev/yii2-language
 [66ed44e]: https://github.com/hiqdev/yii2-language/commit/66ed44e
 [fe0fca1]: https://github.com/hiqdev/yii2-language/commit/fe0fca1
 [50e2e0b]: https://github.com/hiqdev/yii2-language/commit/50e2e0b
+[f737c61]: https://github.com/hiqdev/yii2-language/commit/f737c61
+[0b2b036]: https://github.com/hiqdev/yii2-language/commit/0b2b036
+[33e88c4]: https://github.com/hiqdev/yii2-language/commit/33e88c4
+[cb4d51a]: https://github.com/hiqdev/yii2-language/commit/cb4d51a
+[a268069]: https://github.com/hiqdev/yii2-language/commit/a268069
