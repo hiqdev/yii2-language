@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * Yii2 module for language switching
  *
  * @link      https://github.com/hiqdev/yii2-language
@@ -64,12 +63,12 @@ class Module extends \yii\base\Module implements BootstrapInterface
     }
 
     /**
-     * @var string Name of the cookie.
+     * @var string name of the cookie
      */
     public $cookieName = 'language';
 
     /**
-     * @var integer expiration date of the cookie storing the language of the site.
+     * @var integer expiration date of the cookie storing the language of the site
      */
     public $expireDays = 30;
 
@@ -80,7 +79,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
     /**
      * Saving language into cookie and database.
-     * @param string $language - The language to save.
+     * @param string $language - The language to save
      * @return static
      */
     public function saveLanguage($language)

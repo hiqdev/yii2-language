@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * Yii2 module for language switching
  *
  * @link      https://github.com/hiqdev/yii2-language
@@ -25,7 +24,7 @@ trait GetModuleTrait
 
     /**
      * Setter for module.
-     * @var string|Module module name or the module object.
+     * @var string|Module module name or the module object
      */
     public function setModule($module)
     {
