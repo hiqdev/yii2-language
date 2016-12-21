@@ -23,7 +23,9 @@ return [
     ],
     'container' => [
         'definitions' => [
-            'LanguageMenu' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
+            \hiqdev\thememanager\menus\AbstractLanguageMenu::class => [
+                'class' => \hiqdev\yii2\language\menus\LanguageMenu::class,
+            ],
         ],
     ],
 ];

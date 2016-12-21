@@ -12,13 +12,12 @@ use yii\helpers\Url;
     <?= strtoupper(substr($language, 0, 2)) ?>
 </a>
 <ul class="dropdown-menu">
-    <?php if (is_array($languages)) : ?>
-        <?php foreach ($languages as $code => $lang): ?>
+    <?php if (is_array($items)) : ?>
+        <?php foreach ($items as $code => $item): ?>
             <li class="header">
                 <?= Html::a(
-                    $lang,
-                    Url::to(array_merge($selectUrl, ['language' => $code])),
-                    ['class' => mb_stristr($language, $code) ? 'text-bold' : '']
+                    $item['label'], $item['url'],
+                    ['class' => empty($item['active']) ? '' : 'text-bold']
                 ) ?>
             </li>
         <?php endforeach ?>
