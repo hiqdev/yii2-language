@@ -1,11 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-use yii\helpers\Url;
 
-/* @var array $languages */
+/* @var array $items */
 /* @var string $language */
-/* @var string $selectUrl */
 
 ?>
 <a href="#" class="dropdown-toggle" data-toggle="dropdown">

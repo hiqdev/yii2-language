@@ -15,18 +15,16 @@ use yii\helpers\ArrayHelper;
 
 /**
  * Language Menu widget.
- *
- * @property Module $module The module to be used, can be found by default.
  */
 class LanguageMenu extends \yii\base\Widget
 {
     public $items;
 
-    public $view = 'LanguageMenu';
+    public $viewFile = 'LanguageMenu';
 
     public function run()
     {
-        return $this->render($this->view, [
+        return $this->render($this->viewFile, [
             'language'  => ArrayHelper::remove($this->items, 'language'),
             'items'     => $this->items,
         ]);
