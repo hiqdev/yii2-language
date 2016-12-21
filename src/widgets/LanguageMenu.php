@@ -11,7 +11,7 @@
 namespace hiqdev\yii2\language\widgets;
 
 use codemix\localeurls\UrlManager;
-use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * Language Menu widget.
@@ -20,39 +20,15 @@ use Yii;
  */
 class LanguageMenu extends \yii\base\Widget
 {
-    use \hiqdev\yii2\language\GetModuleTrait;
-
-    public function getLanguages()
-    {
-        return $this->getModule()->languages;
-    }
-
-    public function getLanguage()
-    {
-        return Yii::$app->language;
-    }
+    public $items;
 
     public $view = 'LanguageMenu';
 
     public function run()
     {
         return $this->render($this->view, [
-            'language'  => $this->getLanguage(),
-            'languages' => $this->getLanguages(),
-            'selectUrl' => $this->getSelectUrl(),
+            'language'  => ArrayHelper::remove($this->items, 'language'),
+            'items'     => $this->items,
         ]);
-    }
-
-    public function getSelectUrl()
-    {
-        if (Yii::$app->urlManager instanceof UrlManager) {
-            $route = Yii::$app->controller->route;
-            $params = Yii::$app->request->get();
-            array_unshift($params, '/' . $route);
-
-            return $params;
-        }
-
-        return ['/' . $this->getModule()->id . '/language/select'];
     }
 }

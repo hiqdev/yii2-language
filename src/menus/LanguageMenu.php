@@ -19,9 +19,13 @@ use yii\helpers\Url;
  *
  * @property Module $module The module to be used, can be found by default.
  */
-class LanguageMenu extends \yii\base\Widget
+class LanguageMenu extends \hiqdev\menumanager\Menu
 {
     use \hiqdev\yii2\language\GetModuleTrait;
+
+    public $widgetConfig = [
+        'class' => \hiqdev\yii2\language\widgets\LanguageMenu::class,
+    ];
 
     public function getLanguages()
     {
@@ -37,7 +41,9 @@ class LanguageMenu extends \yii\base\Widget
     {
         $url = $this->getSelectUrl();
         $language = $this->getLanguage();
-        $items = [];
+        $items = [
+            'language' => $language,
+        ];
         foreach ($this->getLanguages() as $code => $lang) {
             $items[$code] = [
                 'label'  => $lang,
