@@ -46,12 +46,12 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*"
+        "hiqdev/yii2-menus": "<2.0 || dev-master",
+        "hiqdev/yii2-thememanager": "<2.0 || dev-master"
     },
     "require-dev": {
-        "hiqdev/hidev-php": "*",
-        "hiqdev/hidev-hiqdev": "*",
-        "yiisoft/yii2": "*@dev"
+        "hiqdev/hidev-php": "<2.0 || dev-master",
+        "hiqdev/hidev-hiqdev": "<2.0 || dev-master"
     },
     "autoload": {
         "psr-4": {
