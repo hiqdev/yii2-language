@@ -19,7 +19,7 @@ use yii\helpers\Url;
  *
  * @property Module $module The module to be used, can be found by default.
  */
-class LanguageMenu extends \hiqdev\menumanager\Menu
+class LanguageMenu extends \hiqdev\yii2\menus\Menu
 {
     use \hiqdev\yii2\language\GetModuleTrait;
 
