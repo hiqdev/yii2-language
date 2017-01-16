@@ -5,12 +5,11 @@
  * @link      https://github.com/hiqdev/yii2-language
  * @package   yii2-language
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiqdev\yii2\language\widgets;
 
-use codemix\localeurls\UrlManager;
 use yii\helpers\ArrayHelper;
 
 /**
