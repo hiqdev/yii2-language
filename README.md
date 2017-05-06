@@ -1,5 +1,4 @@
-Yii2 Language Module
-====================
+# Yii2 Language
 
 **Yii2 module for language switching**
 
@@ -10,7 +9,7 @@ Yii2 Language Module
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/yii2-language.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-language/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:yii2-language/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:yii2-language/dev-master)
 
-This [Yii2](http://yiiframework.com/) extension provides language switching module.
+This [Yii2] extension provides language switching module.
 
 This extension provides:
 
@@ -18,6 +17,8 @@ This extension provides:
     - auto detection of acceptable languages
     - saving selected language to cookie
 - widget for displaying language selection menu
+
+[yii2]: http://yiiframework.com/
 
 ## Installation
 

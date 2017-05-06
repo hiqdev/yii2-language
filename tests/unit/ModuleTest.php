@@ -1,6 +1,6 @@
 <?php
 /**
- * Yii2 module for language switching
+ * Yii2 module for language switching.
  *
  * @link      https://github.com/hiqdev/yii2-language
  * @package   yii2-language

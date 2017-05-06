@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var string $language */
 
 ?>
-<?php if (count($items)>1) : ?>
+<?php if (count($items) > 1) : ?>
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
         <?= strtoupper(substr($language, 0, 2)) ?>
     </a>
