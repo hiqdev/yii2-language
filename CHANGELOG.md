@@ -20,6 +20,8 @@
 
 ## [Development started] - 2016-08-05
 
+## [dev] - 2017-05-06
+
 [@hiqsol]: https://github.com/hiqsol
 [sol@hiqdev.com]: https://github.com/hiqsol
 [@SilverFire]: https://github.com/SilverFire
@@ -32,3 +34,4 @@
 [0.0.2]: https://github.com/hiqdev/yii2-language/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/hiqdev/yii2-language/releases/tag/0.0.1
 [0.1.0]: https://github.com/hiqdev/yii2-language/compare/0.0.2...0.1.0
+[Development started]: https://github.com/hiqdev/yii2-language/compare/dev...Development started
