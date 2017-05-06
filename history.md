@@ -1,8 +1,14 @@
-hiqdev/yii2-language
---------------------
+# hiqdev/yii2-language
 
-## [Under development]
+## [0.1.0] - 2017-05-06
 
+- Renamed configs: `hidev.yml` and `web` <- hisite
+    - [af2b4ca] 2017-05-06 fixed tests [@hiqsol]
+    - [c6da61b] 2017-05-06 csfixed [@hiqsol]
+    - [8937df0] 2017-05-06 renamed config `web` <- hisite [@hiqsol]
+    - [5ba5668] 2017-05-06 renamed `hidev.yml` [@hiqsol]
+- Changed LanguageMenu to hide when no other languages
+    - [f43212b] 2017-04-19 hidden LanguageMenu when no other languages [@hiqsol]
 - Changed: redone with LanguageMenu menu (was widget)
     - [4129c4a] 2017-01-16 csfixed [@hiqsol]
     - [b7b8d8f] 2016-12-22 fixed dependencies in composer.json [@hiqsol]
@@ -84,3 +90,9 @@ hiqdev/yii2-language
 [Under development]: https://github.com/hiqdev/yii2-language/compare/0.0.2...HEAD
 [0.0.2]: https://github.com/hiqdev/yii2-language/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/hiqdev/yii2-language/releases/tag/0.0.1
+[c6da61b]: https://github.com/hiqdev/yii2-language/commit/c6da61b
+[8937df0]: https://github.com/hiqdev/yii2-language/commit/8937df0
+[5ba5668]: https://github.com/hiqdev/yii2-language/commit/5ba5668
+[f43212b]: https://github.com/hiqdev/yii2-language/commit/f43212b
+[af2b4ca]: https://github.com/hiqdev/yii2-language/commit/af2b4ca
+[0.1.0]: https://github.com/hiqdev/yii2-language/compare/0.0.2...0.1.0

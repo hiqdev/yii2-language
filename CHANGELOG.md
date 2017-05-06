@@ -1,8 +1,9 @@
-hiqdev/yii2-language
---------------------
+# hiqdev/yii2-language
 
-## [Under development]
+## [0.1.0] - 2017-05-06
 
+- Renamed configs: `hidev.yml` and `web` <- hisite ([@hiqsol])
+- Changed LanguageMenu to hide when no other languages ([@hiqsol])
 - Changed: redone with LanguageMenu menu (was widget) ([@hiqsol])
 
 ## [0.0.2] - 2016-12-06
@@ -30,3 +31,4 @@ hiqdev/yii2-language
 [Under development]: https://github.com/hiqdev/yii2-language/compare/0.0.2...HEAD
 [0.0.2]: https://github.com/hiqdev/yii2-language/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/hiqdev/yii2-language/releases/tag/0.0.1
+[0.1.0]: https://github.com/hiqdev/yii2-language/compare/0.0.2...0.1.0
