@@ -12,14 +12,18 @@ use yii\helpers\Html;
     </a>
     <ul class="dropdown-menu">
         <?php if (is_array($items)) : ?>
-            <?php foreach ($items as $code => $item): ?>
-                <li class="header">
-                    <?= Html::a(
-                        $item['label'], $item['url'],
-                        ['class' => empty($item['active']) ? '' : 'text-bold']
-                    ) ?>
-                </li>
-            <?php endforeach ?>
+            <li>
+                <ul class="lang-menu">
+                    <?php foreach ($items as $code => $item): ?>
+                        <li>
+                            <?= Html::a(
+                                $item['label'], $item['url'],
+                                ['class' => empty($item['active']) ? '' : 'text-bold']
+                            ) ?>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+            </li>
         <?php endif ?>
     </ul>
 <?php endif ?>
