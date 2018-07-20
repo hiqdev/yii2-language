@@ -90,7 +90,9 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
     private function initLanguage()
     {
-        if ($this->isValidLanguage(Yii::$app->request->cookies->getValue($this->cookieName))) {
+        if (($language = Yii::$app->request->get('language')) && $this->isValidLanguage($language)) {
+            $this->saveLanguage($language);
+        } else if ($this->isValidLanguage(Yii::$app->request->cookies->getValue($this->cookieName))) {
             $this->applyLanguage(Yii::$app->request->cookies->getValue($this->cookieName));
         } else {
             Yii::$app->response->cookies->remove($this->cookieName);
