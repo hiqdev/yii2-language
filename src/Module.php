@@ -10,6 +10,7 @@
 
 namespace hiqdev\yii2\language;
 
+use hiqdev\yii2\language\events\LanguageWasChanged;
 use Yii;
 use yii\base\BootstrapInterface;
 use yii\web\Cookie;
@@ -82,10 +83,17 @@ class Module extends \yii\base\Module implements BootstrapInterface
      * @param string $language - The language to save
      * @return static
      */
-    public function saveLanguage($language)
+    public function saveLanguage($language): self
     {
+        $oldLanguage = Yii::$app->language;
         $this->applyLanguage($language);
         $this->saveLanguageIntoCookie($language);
+        $this->trigger(
+            LanguageWasChanged::EVENT_NAME,
+            LanguageWasChanged::betweenLanguages($oldLanguage, $language)
+        );
+
+        return $this;
     }
 
     private function initLanguage()
