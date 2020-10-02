@@ -18,7 +18,7 @@ return [
     'components' => [
         'themeManager' => [
             'pathMap' => [
-                '@hiqdev/yii2/language/widgets/views' => '$themedWidgetPaths',
+                dirname(__DIR__) . '/src/widgets/views' => '$themedWidgetPaths',
             ],
         ],
     ],
