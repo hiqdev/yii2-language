@@ -46,8 +46,8 @@
         }
     ],
     "require": {
-        "hiqdev/yii2-menus": "<2.0 || dev-master",
-        "hiqdev/yii2-thememanager": "<2.0 || dev-master"
+        "hiqdev/yii2-menus": "*@dev",
+        "hiqdev/yii2-thememanager": "*@dev"
     },
     "require-dev": {
         "hiqdev/hidev-php": "<2.0",
