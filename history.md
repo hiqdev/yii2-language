@@ -1,5 +1,20 @@
 # hiqdev/yii2-language
 
+## [0.2.0] - 2020-11-26
+
+- Fix require version constraints for composer v2
+    - [38145f4] 2020-11-26 Fix require version constraints for composer v2 [@hiqsol]
+    - [96aa8a0] 2020-10-02 Fix to use path instead of alias [@hiqsol]
+- Added LanguageWasChanged event
+    - [2f4e261] 2020-03-04 Added LanguageWasChanged event [@SilverFire]
+- Added `language.languages` param
+    - [913ea7b] 2019-06-19 Added `language.languages` param [@hiqsol]
+- Other minor changes
+    - [c4aec9d] 2019-03-03 Moved config to root dir [@hiqsol]
+    - [0891848] 2018-07-23 Merge pull request #2 from tafid/apply_language_from_get_params [@SilverFire]
+    - [9729c5a] 2018-07-20 Got language from GET params in Module::initLanguage() [@tafid]
+    - [a6f8640] 2017-05-18 Fixed markup [@tafid]
+
 ## [0.1.0] - 2017-05-06
 
 - Renamed configs: `hidev.yml` and `web` <- hisite
@@ -89,7 +104,7 @@
 [9ff9657]: https://github.com/hiqdev/yii2-language/commit/9ff9657
 [e7aa234]: https://github.com/hiqdev/yii2-language/commit/e7aa234
 [b5fae65]: https://github.com/hiqdev/yii2-language/commit/b5fae65
-[Under development]: https://github.com/hiqdev/yii2-language/compare/0.0.2...HEAD
+[Under development]: https://github.com/hiqdev/yii2-language/compare/0.1.0...HEAD
 [0.0.2]: https://github.com/hiqdev/yii2-language/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/hiqdev/yii2-language/releases/tag/0.0.1
 [c6da61b]: https://github.com/hiqdev/yii2-language/commit/c6da61b
@@ -99,3 +114,12 @@
 [af2b4ca]: https://github.com/hiqdev/yii2-language/commit/af2b4ca
 [0.1.0]: https://github.com/hiqdev/yii2-language/compare/0.0.2...0.1.0
 [Development started]: https://github.com/hiqdev/yii2-language/compare/dev...Development started
+[38145f4]: https://github.com/hiqdev/yii2-language/commit/38145f4
+[96aa8a0]: https://github.com/hiqdev/yii2-language/commit/96aa8a0
+[2f4e261]: https://github.com/hiqdev/yii2-language/commit/2f4e261
+[913ea7b]: https://github.com/hiqdev/yii2-language/commit/913ea7b
+[c4aec9d]: https://github.com/hiqdev/yii2-language/commit/c4aec9d
+[0891848]: https://github.com/hiqdev/yii2-language/commit/0891848
+[9729c5a]: https://github.com/hiqdev/yii2-language/commit/9729c5a
+[a6f8640]: https://github.com/hiqdev/yii2-language/commit/a6f8640
+[0.2.0]: https://github.com/hiqdev/yii2-language/compare/0.1.0...0.2.0

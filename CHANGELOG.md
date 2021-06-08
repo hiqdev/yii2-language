@@ -1,5 +1,12 @@
 # hiqdev/yii2-language
 
+## [0.2.0] - 2020-11-26
+
+- Fix require version constraints for composer v2 ([@hiqsol])
+- Added LanguageWasChanged event ([@SilverFire])
+- Added `language.languages` param ([@hiqsol])
+- Other minor changes ([@hiqsol], [@SilverFire], [@tafid])
+
 ## [0.1.0] - 2017-05-06
 
 - Renamed configs: `hidev.yml` and `web` <- hisite ([@hiqsol])
@@ -30,8 +37,9 @@
 [andreyklochok@gmail.com]: https://github.com/tafid
 [@BladeRoot]: https://github.com/BladeRoot
 [bladeroot@gmail.com]: https://github.com/BladeRoot
-[Under development]: https://github.com/hiqdev/yii2-language/compare/0.0.2...HEAD
+[Under development]: https://github.com/hiqdev/yii2-language/compare/0.1.0...HEAD
 [0.0.2]: https://github.com/hiqdev/yii2-language/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/hiqdev/yii2-language/releases/tag/0.0.1
 [0.1.0]: https://github.com/hiqdev/yii2-language/compare/0.0.2...0.1.0
 [Development started]: https://github.com/hiqdev/yii2-language/compare/dev...Development started
+[0.2.0]: https://github.com/hiqdev/yii2-language/compare/0.1.0...0.2.0
