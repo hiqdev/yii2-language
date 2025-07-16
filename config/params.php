@@ -11,6 +11,5 @@
 return [
     'language.languages' => [
         'en' => 'English',
-        'ru' => 'Русский',
     ],
 ];
